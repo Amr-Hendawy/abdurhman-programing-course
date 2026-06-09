@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../01.Projects/talabat"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "code"
+	}
+}
