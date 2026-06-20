@@ -1,5 +1,5 @@
-body{
-    height: 450vh;
+body {
+    height: 3000px;
 }
 
 .container{   
@@ -9,6 +9,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 nav{
     padding-left: 20px;
     padding-right: 20px;
@@ -55,17 +56,14 @@ nav .nav i{
 
 .landing-text{
     background-color: rgba(0, 208, 255,0.5);
-    width:25%;
-    padding: left 20px;
+    margin: 0;
+    width:40%;
+    /* padding-left:  20px; */
     color: white;
+    /* display:flex; */
 
 }
 
-.bg-behind-text{
-    background-color: rgba(0, 208, 255,0.5);
-    width:25%;
-    height: 190px;
-}
 .bodylanding{
     display:flex;
     position: relative;
@@ -182,24 +180,62 @@ nav .nav i{
     color:rgb(0, 174, 255)
 }
 
-.behind-mobile{
+.services-design {
     background-image: url(../images/design-features.jpg);
-    width: 100%;
-    height: 900px;
     background-repeat: no-repeat;
-    background-size:cover
+    background-size:cover;
+    height:600px;
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+
 }
 
-.mobile{
-    background-image: url(../images/mobile.png);
-    width:338px;
-    height: 450px;
-    margin-top:-500px;
-    margin-left:200px
+.services-design:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset:0;
+    background-color:rgb(0 0 0 / 60%);
 }
 
-.des-text{
+.services-design .img {
+    width: 50%;
+    position: absolute;
+    top: 80px;
+    z-index: 5;
+    text-align:center;
+    
+}
+
+.services-design .img img {
+    position: relative;
+    bottom: -150px;
+}
+
+
+.services-design .text {
+    position:absolute;
+    z-index: 6;
+    color:white;
+    right:0px;
+    top: 25%;
     background-color: rgba(0, 208, 255,0.5);
-    width:800px;
-    height:350px;
+    width: 50%;
+    margin-right:0;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.text ul {
+    list-style:none;
+    padding:0;
+}
+
+.text ul li {
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
 }
