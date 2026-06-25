@@ -1,33 +1,75 @@
-// Single Comment
-
-/*
-1
-2
-3
-4
+/* 
+    string ==> string
+    number == >number
+    array ==> Object
+    object ==> Object
+    boolelean == >boolean
+    null ==> Object
+    undefined ==> undefined
 */
+// everything in js is an object
 
-// TODO:: refactor this code
+console.log(typeof "Abdurhman Khalid");
+console.log(typeof 50);
+console.log(typeof 50.6666);
+console.log(typeof [1,2,3,4,5,6,7,8,9]);
+console.log(typeof {name: "Amr", age: 10});
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof null);
+console.log(typeof undefined);
+// console.log(Object());
 
-// window.alert("Helli in js ")
-// document.write("<h1>Hello in document write</h1>")
-// console.log("Hello from js file")
+//  var | let | const varName = varValue;
 
-// Consoile Methods
+// user = "Abdurhman"
 
-// console.error("Error Message")
-// console.info("Error Message")
-// console.warn("Error Message")
+// myName = user
+// myName = user
 
-// console.table(["Abdurhman", "Ahmed", "Ali"])
+// const PI_VALUE = 22/7
+
+// console.log(myName);
 
 
-console.log("Hello From %cJS %cFile", 
-    "color:#27ae60;background-color:#ecf0f1;font-weight:bold;font-size:40px;margin-top:20px;border-radius:6px;", "")
+// var num = 10
+// console.log(window);
 
-// ECMA 
 
-var myName = "Amr";
+// function test() {
+//     console.log(num)
+// }
+// test()
 
-console.log("Hello " + myName);
-console.log(`Hello ${myName}`);
+// var myName = "Amr"
+// myName = "AAA"
+
+
+
+// let myName = "Amr"
+// myName = "Mahmoud"
+// console.log(myName);
+// console.log(window);
+
+// const testName = "Amr"
+// // testName = "Mahmoud"
+// console.log(window);
+
+// String Syntax And Characters Escape Sequences
+
+
+
+console.log('Amr');
+console.log("Amr");
+console.log("'Amr'");
+console.log('"Amr"');
+console.log("\"Amr\"");
+console.log("Amr \\ Hendawy");
+console.log("Amr \
+Hendawy");
+
+console.log("Amr\nHendawy\nMohamed");
+
+// Concatenation 
+// Template Literals (Template Strings)
+// Variables And Concatenation Challenge
