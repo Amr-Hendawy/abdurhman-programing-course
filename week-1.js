@@ -31,3 +31,6 @@ var myName = "Amr";
 
 console.log("Hello " + myName);
 console.log(`Hello ${myName}`);
+
+
+// Tasks Week 1 ?

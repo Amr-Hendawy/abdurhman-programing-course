@@ -9,15 +9,15 @@
 */
 // everything in js is an object
 
-console.log(typeof "Abdurhman Khalid");
-console.log(typeof 50);
-console.log(typeof 50.6666);
-console.log(typeof [1,2,3,4,5,6,7,8,9]);
-console.log(typeof {name: "Amr", age: 10});
-console.log(typeof true);
-console.log(typeof false);
-console.log(typeof null);
-console.log(typeof undefined);
+// console.log(typeof "Abdurhman Khalid");
+// console.log(typeof 50);
+// console.log(typeof 50.6666);
+// console.log(typeof [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+// console.log(typeof { name: "Amr", age: 10 });
+// console.log(typeof true);
+// console.log(typeof false);
+// console.log(typeof null);
+// console.log(typeof undefined);
 // console.log(Object());
 
 //  var | let | const varName = varValue;
@@ -31,10 +31,8 @@ console.log(typeof undefined);
 
 // console.log(myName);
 
-
 // var num = 10
 // console.log(window);
-
 
 // function test() {
 //     console.log(num)
@@ -43,8 +41,6 @@ console.log(typeof undefined);
 
 // var myName = "Amr"
 // myName = "AAA"
-
-
 
 // let myName = "Amr"
 // myName = "Mahmoud"
@@ -57,19 +53,66 @@ console.log(typeof undefined);
 
 // String Syntax And Characters Escape Sequences
 
+// console.log("Amr");
+// console.log("Amr");
+// console.log("'Amr'");
+// console.log('"Amr"');
+// console.log('"Amr"');
+// console.log("Amr \\ Hendawy");
+// console.log(
+//   "Amr \
+// Hendawy",
+// );
 
+// console.log("Amr\nHendawy\nMohamed");
 
-console.log('Amr');
-console.log("Amr");
-console.log("'Amr'");
-console.log('"Amr"');
-console.log("\"Amr\"");
-console.log("Amr \\ Hendawy");
-console.log("Amr \
-Hendawy");
-
-console.log("Amr\nHendawy\nMohamed");
-
-// Concatenation 
+// Concatenation
 // Template Literals (Template Strings)
 // Variables And Concatenation Challenge
+
+// let a = " I Love ";
+// let b = "Javascript";
+// let space = " ";
+// document.write(a + space + b);
+// document.write(a, b);
+
+// console.log(a + " " + b);
+
+// alert not recommened
+// documnet.write()
+//  console.log()
+
+// template literals - template string
+
+// let a = "We love";
+// let b = "javascript";
+// let c = "and";
+// let d = "programing";
+
+// console.log(a + " \" \" " + b + 
+//     "\n" + c + " " + d)
+
+//     console.log(`${a} "" ''  \\ ${b} 
+// ${c} ${d}`);
+
+
+// Second Example
+
+let title = "Software Engineer";
+let desc = "This position name leads to programing field";
+
+
+let markup = `
+    <div class="card">
+        <div class="child">
+            <h2>${title}</h2>
+            <p>${desc}</p>
+        </div>
+    </div>
+
+`;
+
+document.write(markup);
+
+
+// Tasks Week 2 ?
