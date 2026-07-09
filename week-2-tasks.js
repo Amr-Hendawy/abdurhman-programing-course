@@ -5,6 +5,9 @@ console.log(typeof (10 + "20"));
 console.log(`${numberOne}${numberTwo}`);
 console.log(typeof ` ${numberOne}${numberTwo}`);
 console.log(numberOne + "\n" + numberTwo);
+console.log(
+  '`I\'m In \n \\\\ \n Love \\ """ \'\'\' \n ++ With ++ \n \\"""\\""" \n ""Javascript""` ',
+);
 
 console.log(elzero.innerHTML); // object
 console.log(typeof elzero); // object
