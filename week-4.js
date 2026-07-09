@@ -54,7 +54,9 @@
 // console.log(Math.floor(99.0));
 // console.log(Math.floor(99.9));
 
+// power
 // console.log(Math.pow(2, 3));
 // console.log(Math.random());
+// truncate
 // console.log(Math.trunc(99.6));
 // console.log(Math.trunc(99.9));
