@@ -45,3 +45,51 @@ myName = "user";
 let myAge = 11;
 
 console.log("Amr Hendawy");
+console.log('Amr Hendawy');
+console.log("'Amr Hendawy'");
+console.log('"Amr Hendawy"');
+console.log("\"Amr Hendawy\"");
+console.log("Amr \\ Hendawy");
+console.log("Amr \
+Hendawy");
+console.log("Amr\nHendawy\nMohamed");
+
+// lesson 5 - concatination
+
+//let a = "I Love";
+//let b = "JavaScript";
+//let space = " ";
+
+//console.log(a + " " + b);
+//console.log(a + space + b);
+
+let a = "I Love";
+let b = "JavaScript";
+let c = "and";
+let d = "Programming";
+
+//console.log(a+ "\" \" " + b + 
+//   "\n" + c + " " + d);
+//console.log(`${a} "" ''  \\${b}
+//     ${c} ${d}`);
+
+let title = "software Engineer";
+let desc = "this position name lead to programing field";
+let markup = `
+<div class="card">
+    <h3>${title}</h3>
+    <p>${desc}</p>
+</div>`
+document.write(markup);
+
+//Arithmetic
+console.log(10 + 20);
+console.log(10 - 20);
+console.log(10 * 20);
+console.log(10 / 20);
+console.log(10 % 20);
+console.log(2 ** 4);
+//Assignment operators
+let x = 10;
+
+x += 20;
