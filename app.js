@@ -63,7 +63,7 @@ console.log("Amr\nHendawy\nMohamed");
 //console.log(a + " " + b);
 //console.log(a + space + b);
 
-let a = "I Love";
+/*let a = "I Love";
 let b = "JavaScript";
 let c = "and";
 let d = "Programming";
@@ -92,4 +92,36 @@ console.log(2 ** 4);
 //Assignment operators
 let x = 10;
 
-x += 20;
+x += 20;*/
+//lesson 6 - numbers
+console.log((100.5).toString());
+console.log((100.5).toString());
+console.log((100.55455).toFixed(2));
+console.log(Number("100 Amr"));
+console.log(+"100 Amr");
+console.log(parseInt("100 Amr"));
+console.log(parestInt("Amr 100 Amr"))
+
+console.log(parestInt(1050.3))
+console.log(parestFloat("A 1050 Amr"))
+console.log(parestFloat("1050.3 Amr"))
+
+
+console.log(Number.isInteger("100"))
+console.log(Number.isInteger(100))
+console.log(Number.isInteger(100.5))
+console.log(Number.isNaN(10))
+console.log(Number.isNaN("Amr" / 10))
+
+
+console.log(Math.round(99.2))
+console.log(Math.round(99.5))
+console.log(Math.ceil(99.9))
+console.log(Math.ceil(99.1))
+
+console.log(Math.floor(99.0))
+console.log(Math.floor(99.9))
+
+console.log(Math.pow(2,4))
+console.log(Math.random())
+console.log(Math.trunc(99.9))
