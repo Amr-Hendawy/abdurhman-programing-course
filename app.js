@@ -94,7 +94,7 @@ let x = 10;
 
 x += 20;*/
 //lesson 6 - numbers
-console.log((100.5).toString());
+/*console.log((100.5).toString());
 console.log((100.5).toString());
 console.log((100.55455).toFixed(2));
 console.log(Number("100 Amr"));
@@ -124,4 +124,56 @@ console.log(Math.floor(99.9))
 
 console.log(Math.pow(2,4))
 console.log(Math.random())
-console.log(Math.trunc(99.9))
+console.log(Math.trunc(99.9))*/
+
+// lesson 7 - strings
+
+let myName = "Abdulrahman";
+
+console.log(myName);
+console.log(myName[0]);
+console.log(myName[1]);
+console.log(myName[2]);
+console.log(myName[3]);
+console.log(myName[4]);
+console.log(myName[5]);
+console.log(myName[6]);
+console.log(myName[7]);
+console.log(myName[8]);
+console.log(myName[9]);
+
+console.log(myName[-1]);
+
+console.log(myName.length)
+console.log(myName.trim())
+çonsole.log(myName.toUppercase())
+console.log(myName.toLowercase())
+console.log(myName.trim().chartAt(2).toUppercase())
+let a = "Abdulrahman Khalid mersal";
+
+console.log(a.indexOf("Khalid"))
+console.log(a.indexOf("Khalid",11))
+console.log(a.indexOf("a",8))
+console.log(a.lastIndexOf("a"))
+
+console.log(a.slice(2, 6));
+console.log(a.slice(-5, -3))
+
+console.log("10".repeat(5));
+
+console.log(a.split("", 6));
+
+console.log(a.length);
+console.log(a.substring(1, 5));
+console.log(a.substring(-10, 10));
+console.log(a.substring(a.length - 5, a.length - 3));
+console.log(a.includes("Khalid"));
+console.log(a.includes("Khalid", 12));
+
+console.log(a.startsWith("a"),7)
+
+console.log(a.endsWith("d"), 3)
+
+
+
+

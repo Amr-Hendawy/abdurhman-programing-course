@@ -4,7 +4,7 @@ console.log(100000); // 100000
 console.log(5e4 + 5e4); // 100000
 
 // Your Solutions
-console.log(25e4 * 3); // 100000
+console.log(25e4 * 4); // 100000
 console.log(1e4); // 100000
 console.log(); // 100000
 console.log(); // 100000
