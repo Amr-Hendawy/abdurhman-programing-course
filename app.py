@@ -1,1 +1,5 @@
-print( 10 + "Abdurhman")
+# print( 10 + "Abdurhman")
+
+name = "Abdurhman"
+
+print(len(name))
