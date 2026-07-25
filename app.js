@@ -128,7 +128,7 @@ console.log(Math.trunc(99.9))*/
 
 // lesson 7 - strings
 
-let myName = "Abdulrahman";
+/*let myName = "Abdulrahman";
 
 console.log(myName);
 console.log(myName[0]);
@@ -172,7 +172,13 @@ console.log(a.includes("Khalid", 12));
 
 console.log(a.startsWith("a"),7)
 
-console.log(a.endsWith("d"), 3)
+console.log(a.endsWith("d"), 3)*/
+
+
+//Revision week 5
+
+
+
 
 
 
