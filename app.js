@@ -4,55 +4,55 @@ console.log,
 window.onload
 */
 
-window.onload = function(){
-    this.document.querySelector(".parent").style.display = "flex";
-}
+// window.onload = function(){
+//     this.document.querySelector(".parent").style.display = "flex";
+// }
 
-console.log(123)
+// console.log(123)
 
 
 // lesson 2 output - datatypes
 
 
-console.log(10)
-console.log("10")
-console.log("%cstop","color:red;text-shadow:5px 1px black; font-size:60px;")
-console.log(["Abdulrahman","Amr","Mahmoad"])
-window.alert("Hello")
+// console.log(10)
+// console.log("10")
+// console.log("%cstop","color:red;text-shadow:5px 1px black; font-size:60px;")
+// console.log(["Abdulrahman","Amr","Mahmoad"])
+// window.alert("Hello")
 
-// lesson 3 
+// // lesson 3 
 
-console.error("This is an error");
-console.info("This is an info message");
-console.warn("This is a warning");
-console.table(["Abdulrahman","Amr","Mahmoad"]);
+// console.error("This is an error");
+// console.info("This is an info message");
+// console.warn("This is a warning");
+// console.table(["Abdulrahman","Amr","Mahmoad"]);
 
-// lesson 4 - datatypes
+// // lesson 4 - datatypes
 
-console.log(typeof "Abdulrahman");
-console.log(typeof 10);
-console.log(typeof 10.22);
-console.log(typeof [1,2,3,4,5,6,7,8,9]);
-console.log(typeof {name:"Abdulrahman",age:22});
-console.log(typeof true);
-console.log(typeof false);
-console.log(typeof null);
-console.log(typeof undefined);
+// console.log(typeof "Abdulrahman");
+// console.log(typeof 10);
+// console.log(typeof 10.22);
+// console.log(typeof [1,2,3,4,5,6,7,8,9]);
+// console.log(typeof {name:"Abdulrahman",age:22});
+// console.log(typeof true);
+// console.log(typeof false);
+// console.log(typeof null);
+// console.log(typeof undefined);
 
-var myName = "Abdulrahman";
-const PI_VALUE = 3.14;
-myName = "user";
-let myAge = 11;
+// var myName = "Abdulrahman";
+// const PI_VALUE = 3.14;
+// myName = "user";
+// let myAge = 11;
 
-console.log("Amr Hendawy");
-console.log('Amr Hendawy');
-console.log("'Amr Hendawy'");
-console.log('"Amr Hendawy"');
-console.log("\"Amr Hendawy\"");
-console.log("Amr \\ Hendawy");
-console.log("Amr \
-Hendawy");
-console.log("Amr\nHendawy\nMohamed");
+// console.log("Amr Hendawy");
+// console.log('Amr Hendawy');
+// console.log("'Amr Hendawy'");
+// console.log('"Amr Hendawy"');
+// console.log("\"Amr Hendawy\"");
+// console.log("Amr \\ Hendawy");
+// console.log("Amr \
+// Hendawy");
+// console.log("Amr\nHendawy\nMohamed");
 
 // lesson 5 - concatination
 
@@ -176,6 +176,126 @@ console.log(a.endsWith("d"), 3)*/
 
 
 //Revision week 5
+
+/*
+==
+!=
+===
+!==
+>
+>=
+<
+<=
+*/
+
+// console.log(10 == 10);
+// console.log(10 == "10");
+// console.log(10 == "10");
+// console.log(10 != 10);
+// console.log(10 != "A");
+
+
+// console.log(10 === 10);
+// console.log(10 === "10");
+// console.log(10 === 5);
+
+// console.log(10 !== 5);
+// console.log(10 !== "A");
+
+// console.log(10 > 9.1);
+// console.log(10 < 10.1);
+
+// console.log(10 <= 10);
+// console.log(10 >= 10);
+
+
+// ! && ||
+
+/*console.log(true);
+console.log(!true);
+console.log(!(10 =="10"));
+console.log(10 == "10" && 10 > 8 && 10 > 50);
+//true && true && false
+
+console.log(10 == "10" || 10 > 8 || 10 > 50);
+//true || true || false
+
+
+let price = 200;
+let discount = false;
+let discountAmount = 50;
+let country = "Egypt";
+let student = true;
+
+if (discount === true) {
+    price -= discountAmount;
+}else if (country === "Egypt") {
+    if (student === true) {
+        price -= discountAmount + 50;
+    }else{
+        price -= discountAmount;
+    }
+} else if ((country === "Canada")) {
+    price -= discountAmount - 35;
+} else {
+    price -= discountAmount - 30
+}
+
+console.log(price)*/
+
+
+// let theName = "Abdulrahman"
+// let theGender = "male"
+// let theAge = 50;
+
+// if (theGender === "male"){
+//     console.log("Mr");
+// } else {
+//     console.log("Mrs")
+// }
+// let result = theGender === "Male" ? "Mr" : "Mrs";
+// console.log(result);
+
+// console.log(`Hello ${theGender === "male" ? "Mr" : "Mrs"} ${theName}`);
+
+// theAge < 20 ? console.log(20) : theAge > 20 && theAge < 50 ? console.log("20 to 60"): theAge > 60 ? console.log("Bigger than 60"): console.log("unknown");
+
+
+// console.log(Boolean(100))
+// console.log(Boolean(-100))
+// console.log(Boolean(false))
+// console.log(Boolean(true))
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean(null))
+// console.log(Boolean())
+// console.log(Boolean(""))
+
+// let price = 0;
+
+// console.log(`the price is ${price || "unknown"}`)
+// console.log(`the price is ${price ?? "unknown"}`)
+
+
+// let day = "saturday"
+
+// switch (day){
+//     case"saturday":
+//     console.log(`it is ${day}1`)
+//     break;
+//     case"sunday":
+//     console.log(`it is ${day}2`)
+//     break;
+//     default:
+//         console.log("I dont know the day")
+// }
+
+
+
+
+
+
+
 
 
 
