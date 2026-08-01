@@ -291,15 +291,61 @@ console.log(price)*/
 // }
 
 
+//lesson 8 - arrays
 
 
+// literal - constructor
+
+// let friends = ["Ahmed","Amr","samy","dawood"]
+// console.log(friends);
+
+// console.log(friends[0]);
+// console.log(friends[1]);
+// console.log(friends[2]);
+// console.log(friends[3]);
+
+// console.log(typeof friends[0]);
+
+// let data = ["Ahmed",10,true,100.5,undefined,null,["A","B","C"],{name:"Abdulrahman",age:22}]
+// console.log(data[2]);
+// console.log(`Hello ${data[0]}`);
+// data[3] = null;
+// console.log(data);
+// console.log(Array.isArray(data));
+// data.length = 2
+// console.log(data);
 
 
+// console.log(data);
+// data.unshift("Abdulrahman","Mahmoud");
+// console.log(data);
+// data.shift();
+// console.log(data);
+// data.push("Abdulrahman","Mahmoud");
+// console.log(data);
+// data.pop();
+// console.log(data);
 
+// console.log(data.indexOf("Amr"));
 
+// console.log(data.lastIndexOf("Amr", -1));
+// console.log(data.includes("Amr", -1));
 
+//console.log(data.sort().reverse());
 
+// let data = ["Amr","Samy","Ahmed"];
+// console.log(data.slice(0, 3));
+// console.log(data.slice(-3));
+// console.log(data.slice(-4, -2));
 
+// data.splice(1, 3, "Abdulrahman", "Mahmoud");
+// console.log(data);
 
+// let friends = ["Amr","Samy","Ahmed","Zyad"];
+// let oldfriends = ["Shady","Haitham"];
+// let allfriends = friends.concat(oldfriends, friends);
 
-
+// console.log(friends.join(" "));
+// console.log(friends.join(" / "));
+// console.log(friends.join(" ** "));
+// console.log(friends.join(" # ").toUpperCase());
