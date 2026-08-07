@@ -314,17 +314,17 @@ console.log(price)*/
 // console.log(Array.isArray(data));
 // data.length = 2
 // console.log(data);
+//  let data = ["Amr","Samy","Ahmed"];
 
-
-// console.log(data);
-// data.unshift("Abdulrahman","Mahmoud");
-// console.log(data);
-// data.shift();
-// console.log(data);
-// data.push("Abdulrahman","Mahmoud");
-// console.log(data);
-// data.pop();
-// console.log(data);
+//  console.log(data);
+//  data.unshift("Abdulrahman","Mahmoud");
+//  console.log(data);
+//  data.shift();
+//  console.log(data);
+//  data.push("Abdulrahman","Mahmoud");
+//  console.log(data);
+//  data.pop();
+//  console.log(data);
 
 // console.log(data.indexOf("Amr"));
 
@@ -349,3 +349,5 @@ console.log(price)*/
 // console.log(friends.join(" / "));
 // console.log(friends.join(" ** "));
 // console.log(friends.join(" # ").toUpperCase());
+
+
