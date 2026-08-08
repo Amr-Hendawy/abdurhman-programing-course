@@ -45,9 +45,19 @@
 // }
 
 
-// let num1 = 9;
-// let str = "9";
-// let str2 = "20";
+let num1 = 9;
+let str = "9";
+let str2 = "20";
+
+if (num1 == str) {
+    console.log(`${num1} Is The Same Value As ${str}`);
+} else if (num1 == str && num1 !== str) {
+    console.log("{num1} Is The Same Value As {str} But Not The Same Type")
+} else if (num1 != str || num1 !== str2) {
+    console.log("{num1} Is Not The Same Value Or The Same Type As {str2}")
+} else if (str === str2 && str != str2) {
+    console.log("{str} Is The Same Type As {str2} But Not The Same Value")
+}
 
 // // Output
 // "{num1} Is The Same Value As {str}"
@@ -127,7 +137,28 @@
 // }
 
 
-// let day = "Friday" ;
+//  let day = "  Friday  " ;
+//  day.trim();
+//  switch (day){
+//     case "Saturday":
+//     case "Friday":
+//     case "sunday":
+//     console.log("No Appointments Available");
+//     break;
+//     case "Monday":
+//     case "Thursday":
+//     console.log("From 10:00 AM To 5:00 PM");
+//     break;
+//     case "Tuesday":
+//     console.log("From 10:00 AM To 6:00 PM")
+//     break;
+//     case "Wednesday":
+//     console.log("From 10:00 AM To 7:00 PM");
+//     break;
+//     default:
+//         console.log("Its Not A Valid Day")
+//     break;
+//  }
 // // You Need To Remove Spaces And Make First Letter Capital => Friday
 
 // let day = "Friday";

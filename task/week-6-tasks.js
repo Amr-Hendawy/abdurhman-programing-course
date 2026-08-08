@@ -33,16 +33,16 @@ console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
 let website = "Go";
 let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 
-console.log("Your Code Here"); // "Go"
+console.log("Your Code Here"); // ZERO
 
 
 
 let needle = "JS";
 let haystack = ["PHP", "JS", "Python"];
 
-console.log(haystack.indexOf(needle)); // 1
-console.log(haystack.lastIndexOf(needle)); // 1
-console.log(haystack.includes(needle)); // true
+console.log(haystack.indexOf(needle));
+console.log(haystack.lastIndexOf(needle));
+console.log(haystack.includes(needle));
 
 
 
