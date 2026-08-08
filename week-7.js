@@ -27,3 +27,6 @@
 
 // console.log(onlyNames);
 // console.log(onlyNums);
+
+
+// 49 ==> 56
