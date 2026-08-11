@@ -351,3 +351,77 @@ console.log(price)*/
 // console.log(friends.join(" # ").toUpperCase());
 
 
+// week 7 - loops
+// let myPals = [1,2,5, "Amr","Osama", 6, "Abdulrahman"];
+// let onlyNames = [];
+// let onlyNums = [];
+
+// for (let i = 0; i < myPath.length; i++) {
+//     if (typeof myPals[i] === "number"){
+//         onlyNums.push(myPals[i])
+//     }
+// };
+
+
+// console.log(onlyNames);
+// let names = [1, 2, 3, 4, "Ahmed","omar","saeed",6,"Ali",10];
+// let onlyStr = [];
+// let onlyNums = [];
+// let combined = [];
+// for (let i = 0; i < names.length; i++) {
+
+//     if (typeof names[i] === "string") {
+//         onlyStr.push(names[i]);
+//     } else {
+//         onlyNums.push(names[i])
+//     }
+// }
+
+// let x = combined.concat(onlyStr, onlyNums);
+
+// console.log(onlyStr)
+// console.log(onlyNums)
+// console.log(x)
+
+
+
+// week 7 - loops - part2
+
+// let items = ["Xbox 360","PS5 Pro","RTX 3070 TI","Joysticks redDragon"]
+// let colors = ["Red","Blue","Purple"];
+// let models = [2026, 2027];
+
+// for (let i = 0; i < items.length;i++) {
+//     console.log("-".repeat(15));
+//     console.log(items(i));
+//     console.log("-".repeat(15));
+//     for (let j = 0;j < colors.length;j++) {
+//         console.log(colors[j]);
+//     }
+// for (let k = 0; k < models.length;k++) {
+//     console.log(models[k])
+// }
+// }
+
+// let items = ["Xbox 360","PS5 Pro","RTX 3070 TI","Joysticks redDragon"]
+// let colors = ["Red","Blue","Purple"];
+
+// mainloop: for (let i = 0; i < items.length; i++) {
+//     console.log(item[i]);
+//     nestedloop: for (let j = 0; j < colors.length; j++) {
+//         console.log(colors[j]);
+//         if (colors[j]);
+//         if (colors[j] === "Blue") {
+//             //continue mainloop;
+//             break mainloop;
+//         }
+//     }
+// }
+
+// let items = ["Xbox 360","PS5 Pro","RTX 3070 TI","Joysticks redDragon"]
+// let i = 0
+// for (; 1 < items.length; ){
+//     console.log(items(i));
+//     i++;
+//     if (1 === items.length) break;
+// }
