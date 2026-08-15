@@ -1,32 +1,57 @@
-// iterator
-
-// for (start; condition; steps) {
-//     // bloack of code
-// }
-
-// for (let i = 0; i < 15; i = i + 1) {
-
-// }
-// let myPals = [1, 2, 5, "Amr", "Osama", 6, "Abdurhman"];
-// // console.log(myPals[0]);
-// // console.log(myPals[1]);
-// // console.log(myPals[2]);
-// let onlyNames = [];
-// let onlyNums = [];
-// for (let i = 0; i < myPals.length; i++) {
-//   if (typeof myPals[i] === "string") {
-//     onlyNames.push(myPals[i]);
+// for (1 2 3)
+// let names = [1, 2, 4, 5, "Ahmed", "Saeed", 6, "Ali"];
+// let onlyStr = [];
+// let onlyNum = [];
+// let combinedArr = [];
+// for (let i = 0; i < names.length; i++) {
+//   if (typeof names[i] === "string") {
+//     onlyStr.push(names[i]);
+//   } else {
+//     onlyNum.push(names[i]);
 //   }
 // }
 
-// for (let i = 0; i < myPals.length; i++) {
-//   if (typeof myPals[i] === "number") {
-//     onlyNums.push(myPals[i]);
+// let x = combinedArr.concat(onlyStr, onlyNum);
+
+// console.log(onlyStr);
+// console.log(onlyNum);
+// console.log(x);
+
+// let items = ["XBOX 360", "PS5 PRO", "RTX 3070 TI", "Joystick RedDragon"];
+// let colors = ["Red", "Blue", "Purple"];
+// let models = [2026, 2027];
+
+// for (let i = 0; i < items.length; i++) {
+//   console.log("-".repeat(15));
+//   console.log(items[i]);
+//   console.log("-".repeat(15));
+//   for (let j = 0; j < colors.length; j++) {
+//     console.log(colors[j]);
+// }
+// for (let k = 0; k < models.length; k++) {
+//       console.log(models[k]);
+
 //   }
 // }
 
-// console.log(onlyNames);
-// console.log(onlyNums);
+// let items = ["XBOX 360", "PS5 PRO", "RTX 3070 TI", "Joystick RedDragon"];
+// let colors = ["Red", "Blue", "Purple"];
 
+// mainLoop: for (let i = 0; i < items.length; i++) {
+//   console.log(items[i]);
+//   nestedLoop: for (let j = 0; j < colors.length; j++) {
+//     console.log(colors[j]);
+//     if (colors[j] === "Blue") {
+//       //   continue mainLoop;
+//       break mainLoop;
+//     }
+//   }
+// }
 
-// 49 ==> 56
+let items = ["XBOX 360", "PS5 PRO", "RTX 3070 TI", "Joystick RedDragon"];
+let i = 0;
+for (;;) {
+  console.log(items[i]);
+  i++;
+  if (i === items.length) break;
+}
