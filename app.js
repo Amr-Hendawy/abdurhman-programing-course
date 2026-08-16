@@ -425,3 +425,21 @@ console.log(price)*/
 //     i++;
 //     if (1 === items.length) break;
 // }
+
+// let items = ["Xbox 360","PS5 Pro","RTX 3070 TI","Joysticks redDragon"]
+
+// let index = 0;
+
+// while (index < items.length) {
+//     console.log(items[index]);
+//     index++
+// }
+
+// do {
+//     console.log(index);
+//     index++;
+// } while (false);
+
+// console.log(index)
+
+// week8 - functions
