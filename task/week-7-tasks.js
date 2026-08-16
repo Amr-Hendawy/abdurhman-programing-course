@@ -51,19 +51,25 @@
 //     console.log(`${names.length} => ${names}`)
 // }
 
-// let start = 0;
-// let swappedName = "elZerO";
+//  let start = 0;
+//  let swappedName = "elZerO";
+//  swappedLetters = [...swappedName];
+//  console.log(swappedLetters);
+//  newArr = [];
+//  for (let i = start; i < swappedLetters.length; i++) {
+//      swappedLetters[i] === swappedLetters[i].toUpperCase()
+//          ? newArr.push(swappedLetters[i].toLowerCase())
+//          : newArr.push(swappedLetters[i].toUpperCase());
+//  }
 
-// for (i = start; i < swappedName;i++) {
-//     if (swappedName.indexOf(0) == ) {}
-// }
+// console.log(newArr);
 
 // let start = 0;
 // let mix = [1, 2, 3, "A", "B", "C", 4];
 // onlyNums = [];
 
-// for (let i = 0; i < names.length; i++) {
-//     if (typeof names[i] === "number") {
+// for (let i = 0; i < mix.length; i++) {
+//     if (typeof mix[i] === "number") {
 //         onlyNums.push(mix[i]);
 //     }
 //     else {
@@ -72,6 +78,3 @@
 // }
 
 // console.log(onlyNums)
-
-
-
