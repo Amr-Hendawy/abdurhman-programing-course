@@ -47,11 +47,28 @@
 //     }
 //   }
 // }
+// Advanced For Loop
+// let items = ["XBOX 360", "PS5 PRO", "RTX 3070 TI", "Joystick RedDragon"];
+// let i = 0;
+// for (;;) {
+//   console.log(items[i]);
+//   i++;
+//   if (i === items.length) break;
+// }
 
+// While Loop
 let items = ["XBOX 360", "PS5 PRO", "RTX 3070 TI", "Joystick RedDragon"];
-let i = 0;
-for (;;) {
-  console.log(items[i]);
-  i++;
-  if (i === items.length) break;
-}
+
+let index = 0;
+
+// while (index < items.length) {
+//   console.log(items[index]);
+//   index++;
+// }
+
+// do {
+//   console.log(index);
+//   index++;
+// } while (false);
+
+// console.log(index);
