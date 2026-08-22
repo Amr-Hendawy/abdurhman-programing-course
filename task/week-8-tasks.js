@@ -51,39 +51,78 @@
 // console.log(ageInTime(110)); // Age Out Of Range
 // console.log(ageInTime(38)); // Months Example => 456 Months
 
-function checkStatus(a, b, c) {
-  // Your Code Here
-  let name;
-  let age;
-  let available;
+// function checkStatus(a, b, c) {
+//   // Your Code Here
+//   let name;
+//   let age;
+//   let available;
 
-  if (typeof a === "string") {
-    name = a;
-  } else if (typeof b === "string") {
-    name = b;
-  } else {
-    name = c;
-  }
+//   if (typeof a === "string") {
+//     name = a;
+//   } else if (typeof b === "string") {
+//     name = b;
+//   } else {
+//     name = c;
+//   }
 
-  if (typeof a === "number") {
-    age = a;
-  } else if (typeof b === "number") {
-    age = b;
-  } else {
-    age = c;
-  }
-  
-  if (typeof a === "boolean") {
-    available = a;
-  } else if (typeof b === "boolean") {
-    available = b;
-  } else {
-    available = c;
-  }
-  return `Hello ${name}, your age is ${age} you are ${available ? "Available" : "Not Available"} For Hire`;
-}
+//   if (typeof a === "number") {
+//     age = a;
+//   } else if (typeof b === "number") {
+//     age = b;
+//   } else {
+//     age = c;
+//   }
+
+//   if (typeof a === "boolean") {
+//     available = a;
+//   } else if (typeof b === "boolean") {
+//     available = b;
+//   } else {
+//     available = c;
+//   }
+//   return `Hello ${name}, your age is ${age} you are ${available ? "Available" : "Not Available"} For Hire`;
+// }
 // // Needed Output
-console.log(checkStatus("Osama", 38, true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-console.log(checkStatus(38, "Osama", true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-console.log(checkStatus(true, 38, "Osama")); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-console.log(checkStatus(false, "Osama", 38)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// console.log(checkStatus("Osama", 38, true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// console.log(checkStatus(38, "Osama", true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// console.log(checkStatus(true, 38, "Osama")); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// console.log(checkStatus(false, "Osama", 38)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+
+// function createSelectBos(startYear, endYear) {
+//   const select = document.createElement("select");
+
+//   for (let year = startYear; year <= endYear; year++) {
+//     const option = document.createElement("option");
+//     option.value = year;
+//     option.textContent = year;
+//     select.appendChild(option);
+//   }
+
+//   document.body.appendChild(select);
+// }
+
+// createSelectBos(2000, 2021)
+// ... Spread Operator change string to array
+// ... Rest parameters
+
+// function fullName(...names) {
+//   const toString = names.join(" ");
+
+//   return console.log(toString);
+// }
+
+// fullName("Amr", "Hendawy", "Mohamed", "Ahmed", "Samy");
+
+function multiply() {
+  let result = 1;
+  for (let i = 0; i < arguments.length; i++) {
+    if (typeof arguments[i] === "number") {
+      result *= Math.trunc(arguments[i]);
+    }
+  }
+  return console.log(result);
+}
+
+multiply(10, 20); // 200
+multiply("A", 10, 30); // 300
+multiply(100.5, 10, "B"); // 1000
