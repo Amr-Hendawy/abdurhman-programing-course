@@ -14,92 +14,76 @@
 // sayHello("Sameh"); // "Hello Sameh"
 
 // function calculate(firstNum, secondNum, operation) {
-//    if (operation == 'add') {
+//   if (operation == "add") {
 //     console.log(firstNum + secondNum);
-//    }else if (operation == 'subtract') {
+//   } else if (operation === "subtract") {
 //     console.log(firstNum - secondNum);
-//    }else if (operation == 'multiply') {
+//   } else if (operation === "multiply") {
 //     console.log(firstNum * secondNum);
-//    }else if (operation == undefined) {
+//   } else if (!operation) {
 //     console.log(firstNum + secondNum);
-//    }else if (secondNum == undefined){
-//     console.log("Second Number Not Found")
-//    }
-
-// }
-
-// // Needed Output
-// calculate(20); // Second Number Not Found
-// calculate(20, 30); // 50
-// calculate(20, 30, 'add'); // 50
-// calculate(20, 30, 'subtract'); // -10
-// calculate(20, 30, 'multiply'); // 600
-
-
-// // function ageInTime(theAge) {
-// //   if (theAge >= 110) {
-// //     return "Age Out of Range";
-// //   } else {
-// //     return `my age in years is ${theAge}
-// //     my age in months is ${theAge * 12}
-// //     my age in years is ${theAge * 12 * 30}
-// //     my age in years is ${theAge * 12 * 30 * 24}
-// //     my age in years is ${theAge * 12 * 30 * 24 * 60}
-// //     my age in years is ${theAge * 12 * 30 * 24 * 60 * 60}`
-// //   }
-// // }
-
-// // // Needed Output
-// // ageInTime(110); // Age Out Of Range
-// // ageInTime(38); // Months Example => 456 Months
-
-
-// function checkStatus(a, b, c) {
-//   let name;
-//   let age;
-//   let available;
-
-//   if (typeof a == "string") {
-//     name = a;
-//   } else if (typeof b === "string"){
-//     name = b;
-//   } else {
-//     num = c
+//   } else if (!secondNum) {
+//     console.log("Second Number Not Found");
 //   }
 // }
 
 // Needed Output
-// checkStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-// checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-// checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
-// checkStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+// calculate(20); // Second Number Not Found
+// calculate(20, 30); // 50
+// calculate(20, 30, "add"); // 50
+// calculate(20, 30, "subtract"); // -10
+// calculate(20, 30, "multiply"); // 600
 
-// function createSelectbox(startYear,endYear) {
-//   const select = document.createElement("select");
-
-//   for (let year = startYear; year <= endYear; year++) {
-//     const option = document.createElement("option");
-//     option.value = year;
-//     option.textContent = year;
-//     select.appendChild(option);
-
+// function ageInTime(theAge) {
+//   if (theAge >= 110) {
+//     return "Age Out Of Range";
+//   } else {
+//     return ` My age in Years is ${theAge}
+//       My age in Months is ${theAge * 12}
+//       My age in Days is ${theAge * 12 * 30}
+//       My age in Hours is ${theAge * 12 * 30 * 24}
+//       My age in Minutes is ${theAge * 12 * 30 * 24 * 60}
+//       My age in Seconds is ${theAge * 12 * 30 * 24 * 60 * 60}`;
 //   }
-
-//   document.body.appendChild(select);
 // }
 
-// createSelectbox(2000,2022)
-function multiply(...nums) {
-  let result = 1;
-  for (let i = 0; i < nums.length;i++) {
-    if (typeof nums[i] === "number") {
-      result *= Math.trunc(nums[i])
-    }
+// // Needed Output
+// console.log(ageInTime(110)); // Age Out Of Range
+// console.log(ageInTime(38)); // Months Example => 456 Months
+
+function checkStatus(a, b, c) {
+  // Your Code Here
+  let name;
+  let age;
+  let available;
+
+  if (typeof a === "string") {
+    name = a;
+  } else if (typeof b === "string") {
+    name = b;
+  } else {
+    name = c;
   }
-  return result
+
+  if (typeof a === "number") {
+    age = a;
+  } else if (typeof b === "number") {
+    age = b;
+  } else {
+    age = c;
+  }
+  
+  if (typeof a === "boolean") {
+    available = a;
+  } else if (typeof b === "boolean") {
+    available = b;
+  } else {
+    available = c;
+  }
+  return `Hello ${name}, your age is ${age} you are ${available ? "Available" : "Not Available"} For Hire`;
 }
-
-console.log(multiply(10, 20));
-
-console.log(multiply("A", 10, 30)) // 300
-console.log(multiply(100.5, 10, "B")) // 1000
+// // Needed Output
+console.log(checkStatus("Osama", 38, true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+console.log(checkStatus(38, "Osama", true)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+console.log(checkStatus(true, 38, "Osama")); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+console.log(checkStatus(false, "Osama", 38)); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
