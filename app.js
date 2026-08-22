@@ -472,3 +472,68 @@ console.log(price)*/
 // }
 
 // getYears(2005, 2026, 2020, 2021)
+
+// setTimeout(function () {
+//     console.log("hi");
+
+// },2000);
+
+// function sayMessage(fName,lName) {
+//     let message = `Hello`
+//     function concatNames() {
+//         message = `${message} ${fName} ${lName}`;
+//     }
+//     concatNames();
+//     return message;
+// }
+// console.log(sayMessage("Abdulrahman", "Khalid"));
+
+// function sayMessage(fName,lName) {
+//     let message = `Hello`
+//     function concatNames() {
+//         return `${message} ${fName} ${lName}`;
+//     }
+//     return concatNames();
+//     }
+// console.log(sayMessage("Abdulrahman", "Khalid"));
+
+// function sayMessage(fName,lName) {
+//     let message = `Hello`
+//     function concatNames() {
+//         function getFullName() {
+//             return `${fName} ${lName}`
+//         }
+//         return `${message} ${getFullName()}`;
+//     }
+//     return concatNames();
+// }
+// console.log(sayMessage("Abdulrahman", "Khalid"));
+
+// let print = function () {
+//     return 10;
+// };
+
+// let print = _ => 10;
+
+// var a = 10;
+// var b = 15;
+
+// function showText() {
+//     var a = 10;
+//     var b = 15;
+//     console.log(`from local ${a}`);
+//     console.log(`from local ${b}`);
+// }
+// console.log(`from global ${a}`);
+// console.log(`from global ${b}`);
+
+function parent() {
+    let a = 10;
+    function child() {
+        console.log(a)
+        console.log(`from child ${b}`);
+        function grand() {
+            let b = 100;
+        }
+    }
+}

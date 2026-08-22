@@ -113,16 +113,16 @@
 
 // fullName("Amr", "Hendawy", "Mohamed", "Ahmed", "Samy");
 
-function multiply() {
-  let result = 1;
-  for (let i = 0; i < arguments.length; i++) {
-    if (typeof arguments[i] === "number") {
-      result *= Math.trunc(arguments[i]);
-    }
-  }
-  return console.log(result);
-}
+// function multiply() {
+//   let result = 1;
+//   for (let i = 0; i < arguments.length; i++) {
+//     if (typeof arguments[i] === "number") {
+//       result *= Math.trunc(arguments[i]);
+//     }
+//   }
+//   return console.log(result);
+// }
 
-multiply(10, 20); // 200
-multiply("A", 10, 30); // 300
-multiply(100.5, 10, "B"); // 1000
+// multiply(10, 20); // 200
+// multiply("A", 10, 30); // 300
+// multiply(100.5, 10, "B"); // 1000
