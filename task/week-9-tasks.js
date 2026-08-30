@@ -50,7 +50,15 @@
 
 
 function specialMix(...data) {
-
+  result = 0
+  numbers = parseInt(data)
+  console.log(result + numbers)
+  for(i = numbers;i > result; i++){
+    if (numbers === "string"){
+        continue;
+    }
+  }
+  
 }
 
 console.log(specialMix(10, 20, 30)); // 60
