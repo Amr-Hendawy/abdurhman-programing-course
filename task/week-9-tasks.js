@@ -1,5 +1,5 @@
 // function getDetails(zName, zAge, zCountry) {
-  
+
 //   let message = `Hello`
 //   function namePattern(zName) {
 //     message = `${getDetails()} ${zName}`
@@ -28,7 +28,6 @@
 // console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 // // Hello Ahmed A., Your Age Is 32, You Live In SY
 
-
 // func1 = () => `Iam A Normal Function`;
 
 // console.log(itsMe()); // Iam A Normal Function
@@ -37,28 +36,23 @@
 
 // console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
 
-// func3 = (zName) => {
-//   return function (status) {
-//     return function (salary) {
-//       return status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Avaialble`;
-//     };
-//   };
-// }
+func3 = (zName) => (status) => (salary) =>
+  status === "Available"
+    ? `${zName}, My Salary Is ${salary}`
+    : `Iam Not Avaialble`;
 
-// console.log(func3("Osama")("Available")(4000)); // Osama, My Salary Is 4000
-// console.log(func3("Ahmed")("Not Available")()); // Iam Not Avaialble
-
+console.log(func3("Osama")("Available")(4000)); // Osama, My Salary Is 4000
+console.log(func3("Ahmed")("Not Available")()); // Iam Not Avaialble
 
 function specialMix(...data) {
-  result = 0
-  numbers = parseInt(data)
-  console.log(result + numbers)
-  for(i = numbers;i > result; i++){
-    if (numbers === "string"){
-        continue;
+  result = 0;
+  numbers = parseInt(data);
+  console.log(result + numbers);
+  for (i = numbers; i > result; i++) {
+    if (numbers === "string") {
+      continue;
     }
   }
-  
 }
 
 console.log(specialMix(10, 20, 30)); // 60
