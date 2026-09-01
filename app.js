@@ -10,9 +10,7 @@ window.onload
 
 // console.log(123)
 
-
 // lesson 2 output - datatypes
-
 
 // console.log(10)
 // console.log("10")
@@ -20,7 +18,7 @@ window.onload
 // console.log(["Abdulrahman","Amr","Mahmoad"])
 // window.alert("Hello")
 
-// // lesson 3 
+// // lesson 3
 
 // console.error("This is an error");
 // console.info("This is an info message");
@@ -174,7 +172,6 @@ console.log(a.startsWith("a"),7)
 
 console.log(a.endsWith("d"), 3)*/
 
-
 //Revision week 5
 
 /*
@@ -194,7 +191,6 @@ console.log(a.endsWith("d"), 3)*/
 // console.log(10 != 10);
 // console.log(10 != "A");
 
-
 // console.log(10 === 10);
 // console.log(10 === "10");
 // console.log(10 === 5);
@@ -207,7 +203,6 @@ console.log(a.endsWith("d"), 3)*/
 
 // console.log(10 <= 10);
 // console.log(10 >= 10);
-
 
 // ! && ||
 
@@ -243,7 +238,6 @@ if (discount === true) {
 
 console.log(price)*/
 
-
 // let theName = "Abdulrahman"
 // let theGender = "male"
 // let theAge = 50;
@@ -260,7 +254,6 @@ console.log(price)*/
 
 // theAge < 20 ? console.log(20) : theAge > 20 && theAge < 50 ? console.log("20 to 60"): theAge > 60 ? console.log("Bigger than 60"): console.log("unknown");
 
-
 // console.log(Boolean(100))
 // console.log(Boolean(-100))
 // console.log(Boolean(false))
@@ -276,7 +269,6 @@ console.log(price)*/
 // console.log(`the price is ${price || "unknown"}`)
 // console.log(`the price is ${price ?? "unknown"}`)
 
-
 // let day = "saturday"
 
 // switch (day){
@@ -290,9 +282,7 @@ console.log(price)*/
 //         console.log("I dont know the day")
 // }
 
-
 //lesson 8 - arrays
-
 
 // literal - constructor
 
@@ -350,7 +340,6 @@ console.log(price)*/
 // console.log(friends.join(" ** "));
 // console.log(friends.join(" # ").toUpperCase());
 
-
 // week 7 - loops
 // let myPals = [1,2,5, "Amr","Osama", 6, "Abdulrahman"];
 // let onlyNames = [];
@@ -361,7 +350,6 @@ console.log(price)*/
 //         onlyNums.push(myPals[i])
 //     }
 // };
-
 
 // console.log(onlyNames);
 // let names = [1, 2, 3, 4, "Ahmed","omar","saeed",6,"Ali",10];
@@ -382,8 +370,6 @@ console.log(price)*/
 // console.log(onlyStr)
 // console.log(onlyNums)
 // console.log(x)
-
-
 
 // week 7 - loops - part2
 
@@ -527,13 +513,60 @@ console.log(price)*/
 // console.log(`from global ${a}`);
 // console.log(`from global ${b}`);
 
-function parent() {
-    let a = 10;
-    function child() {
-        console.log(a)
-        console.log(`from child ${b}`);
-        function grand() {
-            let b = 100;
-        }
-    }
-}
+// function parent() {
+//     let a = 10;
+//     function child() {
+//         console.log(a)
+//         console.log(`from child ${b}`);
+//         function grand() {
+//             let b = 100;
+//         }
+//     }
+// }
+
+// week - 10 - higher order function
+
+// - Map
+// ---- Method
+// --- pipulated
+// --- in the calling array
+
+// Syntax map(callBackFunction(element, index, array) { }, thisArg)
+
+// let nums = [1,2,3,4,5,6,7,8,9,10];
+// let newArray = [];
+// for (let i = 0; i < nums.length; i++){
+//     newArray.push(nums[i] + nums[i]);
+// }
+// console.log(newArray);
+
+// let nums = [1,2,3,4,5,6,7,8,9,10];
+// let addSelf = nums.map(function (element,index,arr){
+//     console.log(`${element}`);
+//     console.log(`${index}`);
+//     console.log(`${arr}`);
+// })
+
+// let nums = [1,2,3,4,5,6,7,8,9,10];
+// let add = nums.map((e) => e + e);
+
+// console.log(add)
+
+// let swappingcases = "aBDurhMAN";
+
+// let sw = swappingcases.split("").map((a) => a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase(),)
+// console.log(sw)
+
+// let invertedNumbers = [1,-15,-22,14,99,-55];
+
+// let inv = invertedNumbers.map(function(e) {
+//     return -arguments;
+// });
+// console.log(inv);
+
+// let ignoredNums = "A55b53du635lrahman";
+// let ign = ignoredNums.split("");
+// map(function (e) {
+//   return isNaN(+e) ? e : "";
+// }).join("");
+// console.log(ign);
