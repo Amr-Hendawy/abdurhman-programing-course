@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Volumes/MacData/github-projects/abdurhman-programing-course/01_circle_area",
+      "program": "/Volumes/MacData/github-projects/abdurhman-programing-course/01_circle_area/build/Debug/outDebug"
+    }
+  ]
+}
