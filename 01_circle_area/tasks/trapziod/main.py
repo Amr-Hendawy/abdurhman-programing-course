@@ -7,6 +7,6 @@ area = (base1 + base2) * height / 2
 print("the area is", area)
 
 def trap_area(side1,side2,h):
-    print("area is"(side1 + side2) * h / 2)
+    print("area is",(side1 + side2) * h / 2)
 
 trap_area(2,3,4)
