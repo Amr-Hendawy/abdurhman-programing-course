@@ -1,6 +1,6 @@
 x = []
 i = 0
-n = int(input("enter nums of nums do you have"))
+n = input("enter nums of nums do you have")
 a = 0
 b = 0
 ave = a/n
