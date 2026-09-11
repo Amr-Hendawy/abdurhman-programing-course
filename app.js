@@ -570,3 +570,51 @@ console.log(price)*/
 //   return isNaN(+e) ? e : "";
 // }).join("");
 // console.log(ign);
+
+// filter - lesson
+
+// let friends = ["Ahmed", "Ali", "Samy", "Amr", "Asmaa", "Maged"];
+
+// let filteredFriends = friends.filter(function (element) {
+//     return element.startsWith("A") ? true : false;
+// });
+
+// console.log(filteredFriends);
+
+// let numbers = [11,20,2,5,17,10];
+
+// let evenNumbers = numbers.filter(function (el) {
+//     return el % 2 === 1;
+// });
+
+// console.log(evenNumbers)
+// let sentence = "I love Coooode too Playing playing much";
+// let smallWords = sentence
+//   .split("")
+//   .filter(function (e) {
+//     return e.length <= 4;
+//   })
+//   .join(" ");
+
+// console.log(smallWords);
+
+// let ignoredNums = "Abd132ul3ra432hm54an";
+// let ign = ignoredNums
+//   .split("")
+//   .filter(function (e) {
+//     return isNaN(parseInt(e));
+//   })
+//   .join("");
+// console.log(ign);
+
+// let mix = "A13BS2ZX";
+// let mixedContent = mix
+//   .split("")
+//   .filter(function (e) {
+//     return !isNaN(+e);
+//   })
+//   .map(function (e) {
+//     return 0 * 0;
+//   })
+//   .join("");
+// console.log(mixedContent);
