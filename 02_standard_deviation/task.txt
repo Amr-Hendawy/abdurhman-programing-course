@@ -1,0 +1,5 @@
+Write an 
+- algorithm 
+- flowchart
+- code 
+for or => correlation coefficient
