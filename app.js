@@ -618,3 +618,36 @@ console.log(price)*/
 //   })
 //   .join("");
 // console.log(mixedContent);
+
+
+// - Reduce
+
+// let nums = [10,20,15,30]
+
+// let add = nums.reduce(function (acc,current,index,arr) {
+//     // console.log(`Accumulator is ${acc}`);
+//     // console.log(`Current is ${current}`);
+//     // console.log(`index is ${index}`);
+//     // console.log(`array is ${arr}`);
+
+//     return acc + current
+// })
+
+// let theLargest = ["xyz","Xbox","PC","Playstation","Mobile"]
+
+// let check = theLargest.reduce(function(acc,current){
+//     // console.log(`Acc ==> ${acc}`)
+//     // console.log(`Current Element ==> ${current}`)
+//     // console.log(acc.length > current.length ? acc : current);
+//     // console.log(`------------------`)
+//     return acc.length > current.length ? acc : current;
+
+// })
+
+let removeChars = ["E","A","$","@","R","Z","I","G","M","F"];
+let finalString = removeChars.filter(function(ele){
+    return ele !== "$" && ele !== "@" && ele !== "!";
+}).reduce(function(acc,current){
+    return `${acc}${current}`
+})
+console.log(finalString)
