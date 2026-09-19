@@ -123,15 +123,15 @@
 
 // console.log(smallWords);
 
-let ignoreNumbers = "Abd132u5r3hman";
-let ign = ignoreNumbers
-  .split("")
-  .filter(function (e) {
-    return isNaN(parseInt(e));
-  })
-  .join("");
+// let ignoreNumbers = "Abd132u5r3hman";
+// let ign = ignoreNumbers
+//   .split("")
+//   .filter(function (e) {
+//     return isNaN(parseInt(e));
+//   })
+//   .join("");
 
-console.log(ign);
+// console.log(ign);
 
 // isNaN(+"5")
 // isNaN(+"A")
@@ -150,4 +150,48 @@ console.log(ign);
 
 // console.log(mixedContent);
 
+// - Reduce
+// -- Method excutes a reducer function on each element of the array
+// -- resulting in a single output value
 
+//  Syntax reduce(callBackFunction(Accumulator, current value,current index,source array) { }, intial value)
+//  - Accumulator => the accumulated value previously returned in the last invocation
+//  - current value => The current element being processed in the array
+//  ------------ Starts from index 0 if an intialValue is provided
+//  ------------ Otherwise it starts from index 1
+// - Array => The current array
+
+// let nums = [10, 20, 15, 30];
+
+// let add = nums.reduce(function (acc, current, index, arr) {
+//   // console.log(`Accumulator is ${acc}`);
+//   // console.log(`current is ${current}`);
+//   // console.log(`index is ${index}`);
+//   // console.log(`arr is ${arr}`);
+//   return acc + current;
+// },25);
+
+// console.log(add);
+
+// let theLargest = ["xyz", "XBox", "PC", "Playstation", "Mobile", "Playstation0"];
+
+// let check = theLargest.reduce(function (acc, current) {
+//   // console.log(`Acc ==> ${acc}`);
+//   // console.log(`Currrent Element ==> ${current}`);
+//   // console.log(acc.length > current.length ? acc : current);
+//   // console.log(`---------------`);
+//   return acc.length > current.length ? acc : current;
+// });
+
+// console.log(theLargest);
+let removeChars = ["E", "A", "$", "@", "R", "Z", "!", "G", "M", "F"];
+
+let finalString = removeChars
+  .filter(function (ele) {
+    return ele !== "$" && ele !== "@" && ele !== "!";
+  })
+  .reduce(function (acc, current) {
+    return `${acc}${current}`;
+  });
+
+console.log(finalString);
