@@ -17,3 +17,20 @@
 // })
 // console.log(nums)
 // [-1, -10, 10, 20, -5, -3]
+
+// let myArray = ["E", "l", "z", ["e", "r"], "o"];
+// let arr = myArray
+// let flattenArr = arr.flat()
+// console.log(flattenArr)
+// Elzero
+
+let nums = [2, 12, 11, 5, 10, 1, 99];
+
+let result = nums.reduce((acc, current) => {
+  return current % 2 === 0
+    ? acc * current
+    : acc + current;
+}, 1);
+
+console.log(result);
+// 500
