@@ -24,13 +24,13 @@
 // console.log(flattenArr)
 // Elzero
 
-let nums = [2, 12, 11, 5, 10, 1, 99];
+// let nums = [2, 12, 11, 5, 10, 1, 99];
 
-let result = nums.reduce((acc, current) => {
-  return current % 2 === 0
-    ? acc * current
-    : acc + current;
-}, 1);
+// let result = nums.reduce((acc, current) => {
+//   return current % 2 === 0
+//     ? acc * current
+//     : acc + current;
+// }, 1);
 
-console.log(result);
+// console.log(result);
 // 500
