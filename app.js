@@ -644,10 +644,28 @@ console.log(price)*/
 
 // })
 
-let removeChars = ["E","A","$","@","R","Z","I","G","M","F"];
-let finalString = removeChars.filter(function(ele){
-    return ele !== "$" && ele !== "@" && ele !== "!";
-}).reduce(function(acc,current){
-    return `${acc}${current}`
-})
-console.log(finalString)
+// let removeChars = ["E","A","$","@","R","Z","I","G","M","F"];
+// let finalString = removeChars.filter(function(ele){
+//     return ele !== "$" && ele !== "@" && ele !== "!";
+// }).reduce(function(acc,current){
+//     return `${acc}${current}`
+// })
+// console.log(finalString)
+
+let allLis = document.querySelectorAll("ul li")
+let allDivs = document.querySelectorAll(".content div")
+
+allLis.forEach(function(ele) {
+    console.log(ele)
+    ele.onclick = function () {
+        allLis.forEach(function(){
+            ele.classList.remove("active");
+        })
+    
+    this.classList.add("active");
+
+    allDivs.forEach(function(ele){
+        ele.style.display = "none";
+    })
+    };
+});
