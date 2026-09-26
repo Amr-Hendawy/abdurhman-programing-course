@@ -184,14 +184,46 @@
 // });
 
 // console.log(theLargest);
-let removeChars = ["E", "A", "$", "@", "R", "Z", "!", "G", "M", "F"];
+// let removeChars = ["E", "A", "$", "@", "R", "Z", "!", "G", "M", "F"];
 
-let finalString = removeChars
-  .filter(function (ele) {
-    return ele !== "$" && ele !== "@" && ele !== "!";
-  })
-  .reduce(function (acc, current) {
-    return `${acc}${current}`;
-  });
+// let finalString = removeChars
+//   .filter(function (ele) {
+//     return ele !== "$" && ele !== "@" && ele !== "!";
+//   })
+//   .reduce(function (acc, current) {
+//     return `${acc}${current}`;
+//   });
 
-console.log(finalString);
+// console.log(finalString);
+
+// - forEach
+// -- Method excutes a a provided function once for each array elemnts
+// -- resulting in a single output value
+
+//  Syntax forEach(callBackFunction(element, index,array) { }, thisArg)
+//  - Elemnt => the current element being processed in the array
+//    - Index => The index of the current element being processed in the array.
+// - Array - The Current Array
+
+// Note
+//  -- Doesn't Return Anything [undefined]
+// Break Will Not Break The Loop
+
+let allLis = document.querySelectorAll("ul li");
+let allDivs = document.querySelectorAll(".content div");
+
+allLis.forEach(function (ele) {
+  console.log(ele);
+
+  ele.onclick = function () {
+    allLis.forEach(function () {
+      ele.classList.remove("active");
+    });
+
+    this.classList.add("active");
+
+    allDivs.forEach(function (ele) {
+      ele.style.display = "none";
+    });
+  };
+});
