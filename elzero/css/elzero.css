@@ -340,7 +340,7 @@ ul {
 .features .f-box-1,.f-box-2,.f-box-3 {
   text-align: center;
   border: 1px solid #ECECEC;
-  height: 700px;
+  height: 800px;
 }
 .features .f-box-1 img {
   max-width: 100%;
@@ -450,12 +450,47 @@ ul {
 }
 .f-box-1 a {
   color: red;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 15px 0 15px;
+  transition: var(--main-transition);
 }
 .f-box-2 a {
   color: green;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 15px 0 15px;
+  transition: var(--main-transition);
+
 }
 .f-box-3 a {
   color: blue;
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 15px 0 15px;
+  transition: var(--main-transition);
+}
+.f-box-1:hover a {
+  background-color: red;
+  color: white;
+}
+.f-box-2:hover a {
+  background-color: green;
+  color: white;
+}
+.f-box-3:hover a {
+  background-color: blue;
+  color: white;
+  
 }
 /* End Feature */
 /* Start Animation */
@@ -501,6 +536,7 @@ ul {
     height: 100%;
   }
 }
+
 @keyframes moving-arrow {
   100% {
     transform: translateX(10px);
