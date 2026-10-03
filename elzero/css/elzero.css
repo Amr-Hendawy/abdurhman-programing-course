@@ -440,46 +440,35 @@ ul {
 .f-box-3 p,.f-box-2 p,.f-box-1 p {
   padding:50px ;
 }
-.features .f-box-1 a,.f-box-2 a,.f-box-3 a {
+/* .features .f-box-1 a,.f-box-2 a,.f-box-3 a {
   border-width: 5px;
   border-style: solid;
-  border-color: red;
+   border-color: red;
   border-radius: 5px;
   font-size: 20px;
   padding: 0 15px 0 15px;
+} */
+.f-box-1 a,.f-box-2 a,.f-box-3 a {
+  border-style: solid;
+  transition: var(--main-transition);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 15px 0 15px;
+  border-width: 5px;
 }
 .f-box-1 a {
   color: red;
-  border-width: 5px;
-  border-style: solid;
   border-color: red;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 0 15px 0 15px;
-  transition: var(--main-transition);
 }
 .f-box-2 a {
-  color: green;
-  border-width: 5px;
-  border-style: solid;
+  color: green; 
   border-color: green;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 0 15px 0 15px;
-  transition: var(--main-transition);
-
 }
 .f-box-3 a {
   color: blue;
-  border-width: 5px;
-  border-style: solid;
   border-color: blue;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 0 15px 0 15px;
-  transition: var(--main-transition);
 }
-.f-box-1:hover a {
+/* .f-box-1:hover a {
   background-color: red;
   color: white;
 }
@@ -490,8 +479,28 @@ ul {
 .f-box-3:hover a {
   background-color: blue;
   color: white;
-  
+} */
+.f-box-1 a {
+  color: red;
+  border-color: red;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  background: linear-gradient(to right, #ff0000 0% ,white 0% );
+  transition: var(--main-transition);
 }
+.f-box-1:hover a {
+  background: linear-gradient(to right, #ff0000 100% ,white 50% );
+  color: white;
+}
+/* .f-box-1 a::before {
+  content: '';
+  inset: 0;
+  background-color: red;
+  transform: translateX(-100px);
+  transition: var(--main-transition);
+} */
+
+
 /* End Feature */
 /* Start Animation */
 @keyframes up-and-down {
