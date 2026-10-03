@@ -652,20 +652,93 @@ console.log(price)*/
 // })
 // console.log(finalString)
 
-let allLis = document.querySelectorAll("ul li")
-let allDivs = document.querySelectorAll(".content div")
+// let allLis = document.querySelectorAll("ul li")
+// let allDivs = document.querySelectorAll(".content div")
 
-allLis.forEach(function(ele) {
-    console.log(ele)
-    ele.onclick = function () {
-        allLis.forEach(function(){
-            ele.classList.remove("active");
-        })
+// allLis.forEach(function(ele) {
+//     console.log(ele)
+//     ele.onclick = function () {
+//         allLis.forEach(function(){
+//             ele.classList.remove("active");
+//         })
     
-    this.classList.add("active");
+//     this.classList.add("active");
 
-    allDivs.forEach(function(ele){
-        ele.style.display = "none";
-    })
-    };
-});
+//     allDivs.forEach(function(ele){
+//         ele.style.display = "none";
+//     })
+//     };
+// });
+
+// week - 11 - objects:
+// let user = {
+//     theName: "Abdulrahman",
+//     age: 11,
+//     sayHello: function () {
+//         return `Hello`;
+//     }
+// }
+// console.log(user)
+// console.log(user.theName)
+// console.log(user["theName"])
+// console.log(user.age)
+// console.log(user["age"])
+// console.log(user.sayHello());
+// console.log(user["sayHello"]())
+
+// newVar = "country"
+
+// let user = {
+//     name: "Abdulrahman",
+//     country: "Egypt"
+// };
+
+// console.log(user.name);
+// console.log(user.country);
+// console.log(user.newVar);
+// console.log(user[newVar]);
+
+
+
+let avaiable = true;
+
+let user = {
+  name: "Abdurhman",
+  age: 38,
+  skills: ["HTML", "CSS", "JS"],
+  avaiable: false,
+  adresses: {
+    ksa: "Riyadh",
+    egypt: {
+      one: "cairo",
+      two: "giza",
+    },
+  },
+  checkAva: function (){
+    if (user.avaiable === true){
+        return`Free for work`;
+    }else {
+        return`Not free`;
+    }
+  }
+};
+
+console.log(user);
+console.log(user.name);
+console.log(user.age);
+console.log(user.skills);
+console.log(user.skills.join(" | "));
+console.log(user.skills(2));
+console.log(user.adresses.ksa);
+console.log(user.adresses.egypt.one);
+console.log(user["adresses"]["egypt"]["one"]);
+console.log(user["adresses"].egypt["one"]);
+console.log(user["adresses"].egypt.one);
+
+
+
+
+
+
+
+
