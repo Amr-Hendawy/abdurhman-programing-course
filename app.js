@@ -700,40 +700,40 @@ console.log(price)*/
 
 
 
-let avaiable = true;
+// let avaiable = true;
 
-let user = {
-  name: "Abdurhman",
-  age: 38,
-  skills: ["HTML", "CSS", "JS"],
-  avaiable: false,
-  adresses: {
-    ksa: "Riyadh",
-    egypt: {
-      one: "cairo",
-      two: "giza",
-    },
-  },
-  checkAva: function (){
-    if (user.avaiable === true){
-        return`Free for work`;
-    }else {
-        return`Not free`;
-    }
-  }
-};
+// let user = {
+//   name: "Abdurhman",
+//   age: 38,
+//   skills: ["HTML", "CSS", "JS"],
+//   avaiable: false,
+//   adresses: {
+//     ksa: "Riyadh",
+//     egypt: {
+//       one: "cairo",
+//       two: "giza",
+//     },
+//   },
+//   checkAva: function (){
+//     if (user.avaiable === true){
+//         return`Free for work`;
+//     }else {
+//         return`Not free`;
+//     }
+//   }
+// };
 
-console.log(user);
-console.log(user.name);
-console.log(user.age);
-console.log(user.skills);
-console.log(user.skills.join(" | "));
-console.log(user.skills(2));
-console.log(user.adresses.ksa);
-console.log(user.adresses.egypt.one);
-console.log(user["adresses"]["egypt"]["one"]);
-console.log(user["adresses"].egypt["one"]);
-console.log(user["adresses"].egypt.one);
+// console.log(user);
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.skills);
+// console.log(user.skills.join(" | "));
+// console.log(user.skills(2));
+// console.log(user.adresses.ksa);
+// console.log(user.adresses.egypt.one);
+// console.log(user["adresses"]["egypt"]["one"]);
+// console.log(user["adresses"].egypt["one"]);
+// console.log(user["adresses"].egypt.one);
 
 
 
