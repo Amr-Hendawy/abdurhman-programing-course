@@ -32,6 +32,8 @@ sqrt_nominator = math.sqrt(nominator)
 
 r = (a / sqrt_nominator)
 
+
+
 # r = (n * sum_xy - sum_x * sum_y) / (((n * sum_xPow - sum_x ** 2) * (n * sum_y2 - sum_y ** 2)) ** 0.5)
 
 print("Correlation Coefficient (r):", r)
