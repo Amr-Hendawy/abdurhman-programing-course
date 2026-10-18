@@ -1,13 +1,12 @@
 function getClosestNumberToTarget(nums,target){
+    let closest = -Infinity
+    
     for (let i = 0; i < nums.length; i++) {
-        if (nums[i] > target && nums[i] < closestPositive) {
-            closestPositive = nums[i]
-        }
-        if (nums[i] < target && nums[i] > closestNegative) {
-            closestNegative = nums[i]
+        if (nums[i] < target && nums[i] > closest) {
+            closest = nums[i]
         }
         
     }
-    return [closestPositive,closestNegative]
+    return closest
 }
-console.log([12,90,40,55],100)
+console.log(getClosestNumberToTarget([90,80,30,55,95],120))
