@@ -1,0 +1,13 @@
+Find pair to target 
+===================
+input [3,9,12,23,25], 28
+output [3, 25]
+-------------------------------
+
+fakeZero 
+========
+input an arry of numbers 1,2,3,0,4,5,6
+output 1,2,3,4,5,6
+
+getClosestNumberToTarget bigger than No Smaller than 
+in the file getClosestNumberToTarget.js
