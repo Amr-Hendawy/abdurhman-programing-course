@@ -50,3 +50,29 @@
 // console.log(result_even);
 // console.log(result_odd);
 
+// const nums = [1,2,3,-1,-2,-3]
+// const result = nums.filter((positiveNumber)=>{
+//     return positiveNumber > 0
+// })
+// console.log(result);
+
+// const numbers = [-6,-34,35,-6,99,78]
+// const result = numbers.find((num) => {return num > 0})
+// console.log(result);
+
+// const numbers = [-6,-34,35,-6,99,78]
+// const result = numbers.some((num) => {return num > 0})
+// console.log(result);
+
+// const peoples = [
+//   { name: "Abdulrahman", age: 12 },
+//   { name: "Ahmed", age: 16 },
+//   { name: "Adel", age: 20 },
+// ];
+// const result = peoples.every((people) => {
+//   return people.age >= 18;
+// });
+// console.log(result);
+
+// 1. create array of objects every object has name age id with uses of filter get the ages up to 18
+// 2. create array of object named as students with using map get all names with upperCase
