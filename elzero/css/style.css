@@ -610,12 +610,35 @@ ul {
   background-position: right bottom;
   transition: var(--main-transition);
 }
+.f-box-2 a {
+  color: green;
+  border-color: 2px solid green;
+  background: linear-gradient(to right, green 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: var(--main-transition);
+}
+.f-box-3 a {
+  color: blue;
+  border-color: 2px solid blue;
+  background: linear-gradient(to right, blue 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: var(--main-transition);
+}
 
 .f-box-1:hover a {
   background-position: left bottom;
   color: white;
 }
-
+.f-box-2:hover a {
+  background-position: left bottom;
+  color: white;
+}
+.f-box-3:hover a {
+  background-position: left bottom;
+  color: white;
+}
 /* .f-box-1 a::before {
   content: '';
   inset: 0;
